@@ -20,7 +20,11 @@ const openModal = function () {
     overlay.classList.remove('hidden');
     const topPercent = 100*(0.5 + window.pageYOffset / (document.body.scrollHeight*0.5));
 
+    const modalHTML = `<a href="${this.id}.html">Go to project</a>`;
+
+    modal.insertAdjacentHTML('beforeend', modalHTML);
     modalParagraph.innerHTML=projectDescriptions.get(this.id);
+    modal.querySelector('h1').textContent = this?.querySelector('p').textContent;
     modal.style.top = `${topPercent}%`;
     modal.style.translate = `translate(${-topPercent}%, ${-topPercent}%)`;
 };
@@ -28,6 +32,7 @@ const openModal = function () {
 const closeModal = () => {
     modal.classList.add('hidden');
     overlay.classList.add('hidden');
+    document?.querySelector('.modal a').remove();
 }
 
 for (let btn of btnsProject){
