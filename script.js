@@ -1,3 +1,3 @@
 "use_strict"
 
-assert("Hello");
+alert("Hello");
