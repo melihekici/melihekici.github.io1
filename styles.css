@@ -109,6 +109,18 @@ body {
 }
 
 
+.project-div {
+    display: block;
+}
+
+.project-paragraph {
+    font-size: 150%;
+}
+
+.source-code {
+    font-size: 150%;
+}
+
 .modal {
     position: absolute;
     top: 50%;

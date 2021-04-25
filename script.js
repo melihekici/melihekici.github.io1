@@ -1,7 +1,7 @@
 "use strict"
 
 const projectDescriptions = new Map([
-    ["project1", "Project 1 description"],
+    ["project1", "This is a small web scraping project to scrape linkedin Jobs. The scrapper has a GUI that will take a search term(eg. 'Python Developer') and a Location(eg. 'Turkey') and then it will return the mostly mentioned tech skills required for that position."],
     ["project2", "Project 2 description"],
     ["project3", "Project 3 description"],
     ["project4", "Project 4 description"],
@@ -47,7 +47,6 @@ document.addEventListener('keydown', function(e) {
         closeModal();
     }
 });
-
 
 
 

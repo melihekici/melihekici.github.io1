@@ -4,10 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Linkedin Job Scrapper</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    Page for project 1
-    <img src="./jpgs/LinkedinJobScrapper.JPG"/>
+    <div class="core-content"></div>
+        <h1><a href="index.html"><img class="back-button" width="25rem" src="https://image.flaticon.com/icons/png/512/60/60577.png"></a>Job Scrapper</h1>
+        <div class="project-div">
+            <p class="source-code">Source Code (Python): <a target="_blank" href="https://github.com/melihekici/LinkedInJobScrapper">github.com/melihekici</a></p>
+            <p class="source-code">Source Code (Java): <a target="_blank" href="https://github.com/melihekici/-LinkedInJobScrapper-Java-">github.com/melihekici</a></p>
+            <br>
+            <img class="project-paragraph-image" src="./jpgs/LinkedinJobScrapper.JPG"/>
+            <p class="project-paragraph">This app has been written in Python language and for windows.<br> It has a basic tkinter GUI which will ask you the Job to be searched and the location.</p>
+            <br>
+            <img class="project-paragraph-image" src="https://static.javatpoint.com/tutorial/selenium-python/images/selenium-python.png"/>
+            <p class="project-paragraph">After you start scraping, a selenium window opens in headless mode(invisible) and searches for the jobs in linkedin using the search term and location.<br>It will scroll down until it reaches at the end of the page and will create an array containing all of the job urls.</p>
+            <img class="project-paragraph-image" src="https://miro.medium.com/max/700/1*ZSmnw481OjgPRtDR40gQoA.png"/>
+            <p class="project-paragraph">After getting all the urls, the selenium driver will close itself and all of the job lists will be scraped one by one using requests package.<br>For each job url, the job description content will be extracted from page source.<br>Tech skills are predefined in a dictionary. For some skills, some aliases are also taken into consideration(example: css and css3 will map to same key value in the dictionary)<br>Each skill is searched inside of the job description one by one and if found the count is incremented by one.<br>At the end, we have a dictionary of skills and count of job postings that corresponding skill is mentioned for every skills.</p>
+            <img class="project-paragraph-image" src="./jpgs/LinkedinJobScrapper2.JPG">
+            <p class="project-paragraph">On completion, a word cloud will be created, opened and be saved as {Search Term}.jpg</p>
+            <img style="width: 755px;"class="project-paragraph-image" src="./jpgs/Python Developer.jpg">
+        </div>
+
 </body>
 </html>
