@@ -24,7 +24,7 @@ function classify() {
     formData.append("image", classificationImageButton.files[0]);
 
     const classificationRequest = new XMLHttpRequest();
-    classificationRequest.open("POST", "http://54.237.55.50:5000/classify")
+    classificationRequest.open("POST", "https://54.237.55.50:5000/classify")
     //classificationRequest.open("GET", "http://google.com.tr");
     console.log(classificationRequest.send(formData)); 
 }
